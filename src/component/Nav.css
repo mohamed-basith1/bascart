@@ -1,0 +1,179 @@
+.navbar {
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 50;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+
+  padding-top: 10px;
+  box-shadow: 1px 7px 11px -5px rgba(0, 0, 0, 0.16);
+}
+.logoimg {
+  width: 40px;
+}
+.logo {
+  flex: 2;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.searchbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  flex: 5;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+.searchbarempty {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  flex: 5;
+
+  border-radius: 1rem;
+}
+.searchbar > form {
+  flex: 1;
+  display: flex;
+  padding-left: 10px;
+}
+.searchbar > form > input {
+  flex: 1;
+  border: none;
+  border-radius: 1rem;
+  padding: 5px;
+
+  outline-width: 0;
+}
+.signin {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+
+.signbtn {
+  background-color: rgb(17, 117, 65);
+  color: white;
+  font-size: 15px;
+  padding: 6px 9px;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.signbtn:hover {
+  background-color: white;
+  color: rgb(17, 117, 65);
+  border: 1px solid rgb(17, 117, 65);
+  box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.3);
+}
+.regbtn {
+  border-radius: 1rem;
+  color: black;
+  padding: 6px 10px;
+  text-align: center;
+  border: 1px solid rgb(17, 117, 65);
+  box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.31);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.regbtn:hover {
+  background-color: rgb(17, 117, 65);
+  color: white;
+}
+
+.menubar {
+  flex: 1;
+  padding: 2px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.line {
+  background-color: rgb(5, 5, 5);
+  width: 20px;
+  height: 1.5px;
+  border-radius: 100px;
+  margin-bottom: 4.5px;
+}
+.newsearch {
+  background-color: white;
+  padding: 10px;
+  z-index: 50;
+  width: 100%;
+}
+.serachicon {
+  width: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 50px 50px 0px;
+}
+.logoutbtn {
+  background-color: rgb(17, 117, 65);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.31);
+}
+.searchlist {
+  left: 0;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 10px;
+  z-index: 50;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 16px 41px -9px rgba(0, 0, 0, 0.31);
+}
+.searchitem {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+.searchitem:hover {
+  background-color: rgb(214, 214, 214);
+}
+@media only screen and (max-width: 786px) {
+  .menubar {
+    display: flex;
+    flex-direction: row;
+  }
+  .signin {
+    display: none;
+  }
+  .logo {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 50px;
+    padding-right: 50px;
+    padding-left: 5px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo {
+    font-size: 20px;
+  }
+  .logoimg {
+    width: 30px;
+  }
+  .searchbar > form > input {
+    padding: 2px;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  color: rgba(235, 244, 252, 0.822);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.social {
+  margin-left: 20px;
+}
+.about {
+  margin-right: 20px;
+}
+.ptags {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+  .social {
+    font-size: 10px;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .categoris {
+    font-size: 10px;
+  }
+  .ptags {
+    font-size: 15px;
+  }
+}
